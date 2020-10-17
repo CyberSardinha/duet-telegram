@@ -1,9 +1,10 @@
 FROM node:12.18.1
-RUN apt-get update \
-    apt-get install -y git
-RUN mkdir /app \
-    cd /app \
-    git clone https://github.com/CyberSardinha/duet-telegram.git
+
+RUN apk update
+RUN apk add git
+RUN mkdir /app
+RUN cd /app
+RUN git clone https://github.com/CyberSardinha/duet-telegram.git
 
 WORKDIR /app/duet-telegram
 
