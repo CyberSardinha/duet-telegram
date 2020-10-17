@@ -1,4 +1,4 @@
-FROM 14.14.0-alpine3.11
+FROM node:12
 
 RUN apk update
 RUN apk add git
