@@ -1,7 +1,5 @@
-FROM node:12
+FROM tarampampam/node:13-alpine
 
-RUN apk update
-RUN apk add git
 RUN mkdir /app
 RUN cd /app
 RUN git clone https://github.com/CyberSardinha/duet-telegram.git
