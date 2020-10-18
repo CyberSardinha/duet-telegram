@@ -6,6 +6,6 @@ WORKDIR /app
 COPY package.json package-lock.json /app/
 RUN npm install
 
-COPY . /app/
+COPY . .
 
 CMD [ "node", "index.js" ]
