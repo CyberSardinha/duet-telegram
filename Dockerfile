@@ -11,4 +11,4 @@ COPY package-lock.json package-lock.json
  
 RUN npm install --silent
  
-CMD [ "node" "index.js" ]
+CMD [ "duetbot" ]
